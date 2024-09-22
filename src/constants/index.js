@@ -25,7 +25,8 @@ import {
     threads,
     typescript,
     cpp,
-    yt
+    yt,
+    shop
 } from "../assets/icons";
 
 export const skills = [
@@ -98,27 +99,32 @@ export const skills = [
 ];
 
 export const experiences = [
-    {
-        title: "DSA Fellowship",
-        company_name: "NextLeap",
-        iconBg: "#accbe1",
-        date: "June 2023 - October 2023",
-        points: [
-            "Acomprehensivecourse will cover C++ fundamentals, including variables, data types, loops, and functions, as well as object-oriented programming concepts like classes and inheritance, Students will delve into memory management, file handling, and libraries like the Standard Template Library (STL).",
-            "LearnDataStructures & Algorithms Learning to break down complex problems into smaller, manageable parts.Practicing problem-solving skills through algorithmic challenges and exercises. Recognizing the need for efficient data handling in software development.",
-        ],
-    },
-    {
-        title: "Content Creator",
-        company_name: "Self Employed",
-        icon: yt,
-        iconBg: "#fbc3bc",
-        date: "Jan 2020 - Present",
-        points: [
-            "Filmmaker & Storyteller",
-        ],
-    },
+  {
+    title: "Software Engineer Fellow",
+    company_name: "BuildSpace S5",
+    iconBg: "#accbe1",
+    date: "June 2024 - July 2024",
+    points: [
+      'Developed and deployed "ApplyLog," a robust web application using the MERN stack.',
+      "Enabled users to efficiently track job applications, manage tasks, and utilize an interactive calendar.",
+      "Integrated event functionality in the calendar and tasks, and designed an analytics tab for insights.",
+      "Implemented secure user authentication with JWT tokens and ensured reliable data handling with MongoDB.",
+    ],
+  },
+  {
+    title: "FrontEnd Development",
+    company_name: "Contract",
+    iconBg: "#fbc3bc",
+    date: "Aug 2024 - Sep 2024",
+    points: [
+      "Led the frontend development of the Osheanic website, incorporating a modern and user-friendly interface.",
+      "Implemented personal blogs and messaging features, enhancing user engagement and communication.",
+      "Developed custom color theme options, allowing users to personalize their browsing experience.",
+      "Ensured full responsiveness and cross-browser compatibility, providing a consistent experience across different devices.",
+    ],
+  },
 ];
+
 
 export const socialLinks = [
     {
@@ -139,6 +145,56 @@ export const socialLinks = [
 ];
 
 export const projects = [
+  {
+    iconUrl: summiz, // replace with actual icon URL
+    theme: "btn-back-blue",
+    name: "ApplyLog",
+    description:
+      "A comprehensive web application for organizing and managing job applications with an analytics tab and task management features.",
+    link: "https://applylog.vercel.app/",
+  },
+  {
+    iconUrl: shop, // replace with actual icon URL
+    theme: "btn-back-purple",
+    name: "Lucky Fashion Store",
+    description:
+      "A React Native women’s clothing shopping app with secure login, shopping cart, WhatsApp integration, and Firebase backend for real-time data.",
+    link: "https://drive.google.com/file/d/1Ow1KAIqOqVWb7RJjiLELb1J4MZqsK1Lu/view",
+  },
+  {
+    iconUrl: threads,
+    theme: "btn-back-green",
+    name: "Authentication App",
+    description:
+      "Developed a React application for user authentication and management.",
+    link: "https://github.com/codebylalit/Authentication-App",
+  },
+  {
+    iconUrl: snapgram,
+    theme: "btn-back-pink",
+    name: "Spotify Clone",
+    description:
+      "Developed a Spotify Clone using React that replicates the functionality of the Spotify music streaming service. User authentication and authorization with Spotify API.",
+    link: "https://github.com/codebylalit/spotify-clone",
+  },
+  {
+    iconUrl: estate,
+    theme: "btn-back-black",
+    name: "Sorting Visualizer",
+    description:
+      "Implemented real-time visualization of sorting processes with Bubble Sort, Selection Sort, and Merge Sort using HTML, CSS, and JavaScript.",
+    link: "https://github.com/codebylalit/Sorting-Visualizer",
+  },
+  {
+    iconUrl: summiz,
+    theme: "btn-back-yellow",
+    name: "Github Info Grabber",
+    description:
+      "An Angular project utilizing the GitHub API to fetch and display user information and repository details.",
+    link: "https://github.com/codebylalit/GithubInfoGrabber-SPA-",
+  },
+];
+
     // {
     //     iconUrl: pricewise,
     //     theme: 'btn-back-red',
@@ -146,13 +202,6 @@ export const projects = [
     //     description: 'Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.',
     //     link: 'https://github.com/adrianhajdin/pricewise',
     // },
-    {
-        iconUrl: threads,
-        theme: 'btn-back-green',
-        name: 'Authentication App',
-        description: 'Developed a React application for user authentication and management',
-        link: 'https://github.com/codebylalit/Authentication-App',
-    },
     // {
     //     iconUrl: car,
     //     theme: 'btn-back-blue',
@@ -160,25 +209,3 @@ export const projects = [
     //     description: 'Designed and built a mobile app for finding and comparing cars on the market, streamlining the car-buying process.',
     //     link: 'https://github.com/adrianhajdin/project_next13_car_showcase',
     // },
-    {
-        iconUrl: snapgram,
-        theme: 'btn-back-pink',
-        name: 'Spotify Clone',
-        description: ' Developed a Spotify Clone using React that replicates the functionality of the Spotify music streaming service.User authentication and authorization with Spotify API.',
-        link: 'https://github.com/codebylalit/spotify-clone',
-    },
-    {
-        iconUrl: estate,
-        theme: 'btn-back-black',
-        name: 'Sorting Visualizer',
-        description: 'Implemented real-time visualization of sorting processes with Bubble Sort, Selection Sort, and Merge Sort using Html,Css and Javascript.',
-        link: 'https://github.com/codebylalit/Sorting-Visualizer',
-    },
-    {
-        iconUrl: summiz,
-        theme: 'btn-back-yellow',
-        name: 'Github Info Grabber',
-        description: ' AnAngular project utilizing the GitHub API to fetch and display user information and repository details.',
-        link: 'https://github.com/codebylalit/GithubInfoGrabber-SPA-',
-    }
-];

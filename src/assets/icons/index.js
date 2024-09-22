@@ -28,6 +28,7 @@ import soundon from './soundon.png'
 import soundoff from './soundoff.png'
 import cpp from '../icons/cpp.svg'
 import yt from '../icons/Yt.svg'
+import shop from "../icons/Shop.svg"
 
 export {
     css,
@@ -59,5 +60,6 @@ export {
     soundon,
     soundoff,
     cpp,
+    shop,
     yt
 }
