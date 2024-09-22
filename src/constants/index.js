@@ -26,7 +26,7 @@ import {
     typescript,
     cpp,
     yt,
-    shop
+    shop,
 } from "../assets/icons";
 
 export const skills = [
