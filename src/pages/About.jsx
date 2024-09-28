@@ -14,24 +14,24 @@ import { github, linkedin } from "../assets/icons";
 
 const About = () => {
   return (
-    <section className="max-container">
-      <div className="flex flex-col lg:flex-row items-center gap-20 mt-20">
+    <section className="max-container bg-yellow-100 text-blue-950 font-sans">
+      <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-20 mt-10 lg:mt-20">
         {/* Add an image to the left */}
-        <div className="w-[650px] h-[350px] rounded-full overflow-hidden">
+        <div className="w-[300px] h-[300px] md:w-[450px] md:h-[300px] lg:w-[650px] lg:h-[350px] rounded-full overflow-hidden">
           <img src={iam} alt="Lalit" className="w-full h-full object-cover" />
         </div>
 
         {/* Personal info shifted to the right */}
-        <div>
-          <h1 className="head-text">
+        <div className="text-center lg:text-left">
+          <h1 className="head-text text-2xl lg:text-4xl">
             Hello, I'm{" "}
-            <span className="blue-gradient_text font-semibold drop-shadow">
+            <span className="font-semibold drop-shadow">
               Lalit
             </span>{" "}
             👋
           </h1>
 
-          <div className="mt-5 flex flex-col gap-3 text-slate-500">
+          <div className="mt-5 flex flex-col gap-3 text-slate-500 text-sm md:text-base">
             <p>
               Aspiring Software Engineer, specializing in technical education
               through hands-on learning and building applications.
@@ -39,9 +39,9 @@ const About = () => {
           </div>
 
           {/* Button Container */}
-          <div className="flex gap-3 mt-2">
+          <div className="flex justify-center lg:justify-start gap-3 mt-2">
             <button
-              className="border border-black bg-transparent text-black font-semibold py-2 px-3 rounded-xl transition-colors duration-300 hover:bg-gray-600 hover:text-white text-sm"
+              className="border border-black bg-transparent text-black font-semibold py-2 px-3 rounded-xl transition-colors duration-300 hover:bg-gray-600 hover:text-white text-sm md:text-base"
               onClick={() =>
                 (window.location.href =
                   "https://drive.google.com/file/d/1pz5SHUvwvwsa-wLdU2OO_uiykrkIWylc/view?usp=sharing")
@@ -52,11 +52,14 @@ const About = () => {
           </div>
 
           {/* Socials Container */}
-          <div id="socials-container" className="flex  mt-4 gap-3">
+          <div
+            id="socials-container"
+            className="flex justify-center lg:justify-start mt-4 gap-3"
+          >
             <img
               src={linkedin}
               alt=""
-              className=" w-8 h-8 cursor-pointer"
+              className="w-6 h-6 md:w-8 md:h-8 cursor-pointer"
               onClick={() =>
                 (window.location.href =
                   "https://www.linkedin.com/in/lalit-kumar-38ba99171/")
@@ -65,7 +68,7 @@ const About = () => {
             <img
               src={github}
               alt=""
-              className=" w-8 h-8 cursor-pointer"
+              className="w-6 h-6 md:w-8 md:h-8 cursor-pointer"
               onClick={() =>
                 (window.location.href = "https://github.com/codebylalit")
               }

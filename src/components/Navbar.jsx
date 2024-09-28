@@ -9,7 +9,7 @@ const Navbar = () => {
         to="/about"
         className="w-auto h-10 rounded-lg items-center justify-center flex font-semibold px-4"
       >
-        <h1 className="text-black font-sans inline-block text-xl md:text-2xl">
+        <h1 className="text-blue-950 font-sans inline-block text-xl md:text-2xl">
           {"Lalit".split("").map((char, index) => (
             <span
               key={index}
@@ -31,11 +31,11 @@ const Navbar = () => {
         </h1>
       </NavLink>
 
-      <nav className="flex text-lg gap-7 font-medium">
+      <nav className="flex text-lg gap-7 text-blue-950 font-medium">
         <NavLink
           to="/about"
           className={({ isActive }) =>
-            isActive ? "text-blue-600" : "text-black"
+            isActive ? "text-blue-600" : "text-blue-950"
           }
         >
           About
@@ -43,7 +43,7 @@ const Navbar = () => {
         <NavLink
           to="/projects"
           className={({ isActive }) =>
-            isActive ? "text-blue-600" : "text-black"
+            isActive ? "text-blue-600" : "text-blue-950"
           }
         >
           Projects
