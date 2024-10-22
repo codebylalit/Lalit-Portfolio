@@ -127,21 +127,21 @@ export const experiences = [
 
 
 export const socialLinks = [
-    {
-        name: 'Contact',
-        iconUrl: contact,
-        link: '/contact',
-    },
-    {
-        name: 'GitHub',
-        iconUrl: github,
-        link: 'https://github.com/codebylalit',
-    },
-    {
-        name: 'LinkedIn',
-        iconUrl: linkedin,
-        link: 'https://www.linkedin.com/in/lalitnamdev',
-    }
+  {
+    name: "Contact",
+    iconUrl: contact,
+    link: "https://lalit-portfolio1.netlify.app/contact",
+  },
+  {
+    name: "GitHub",
+    iconUrl: github,
+    link: "https://github.com/codebylalit",
+  },
+  {
+    name: "LinkedIn",
+    iconUrl: linkedin,
+    link: "https://www.linkedin.com/in/lalitnamdev",
+  },
 ];
 
 export const projects = [
