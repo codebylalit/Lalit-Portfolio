@@ -27,6 +27,7 @@ import {
     cpp,
     yt,
     shop,
+    x
 } from "../assets/icons";
 
 export const skills = [
@@ -128,14 +129,19 @@ export const experiences = [
 
 export const socialLinks = [
   {
-    name: "GitHub",
-    iconUrl: github,
-    link: "https://github.com/codebylalit",
-  },
-  {
     name: "LinkedIn",
     iconUrl: linkedin,
     link: "https://www.linkedin.com/in/lalitnamdev",
+  },
+  {
+    name: "x",
+    iconUrl: x,
+    link: "https://x.com/lalitnamdev_",
+  },
+  {
+    name: "GitHub",
+    iconUrl: github,
+    link: "https://github.com/codebylalit",
   },
 ];
 
