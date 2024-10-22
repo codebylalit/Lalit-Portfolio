@@ -147,6 +147,14 @@ export const socialLinks = [
 export const projects = [
   {
     iconUrl: summiz, // replace with actual icon URL
+    theme: "btn-back-pink",
+    name: "ReelTubeSaver",
+    description:
+      "Built a web app for downloading YouTube videos, Shorts, and Instagram reels.",
+    link: "https://reeltubesaver.vercel.app/",
+  },
+  {
+    iconUrl: summiz, // replace with actual icon URL
     theme: "btn-back-blue",
     name: "ApplyLog",
     description:
