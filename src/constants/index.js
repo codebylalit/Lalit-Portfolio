@@ -128,11 +128,6 @@ export const experiences = [
 
 export const socialLinks = [
   {
-    name: "Contact",
-    iconUrl: contact,
-    link: "https://lalit-portfolio1.netlify.app/contact",
-  },
-  {
     name: "GitHub",
     iconUrl: github,
     link: "https://github.com/codebylalit",
