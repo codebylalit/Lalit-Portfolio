@@ -146,7 +146,7 @@ export const socialLinks = [
 
 export const projects = [
   {
-    iconUrl: summiz, // replace with actual icon URL
+    iconUrl: snapgram, // replace with actual icon URL
     theme: "btn-back-pink",
     name: "ReelTubeSaver",
     description:
