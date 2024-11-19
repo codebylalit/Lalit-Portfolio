@@ -149,6 +149,14 @@ export const projects = [
   {
     iconUrl: snapgram, // replace with actual icon URL
     theme: "btn-back-pink",
+    name: "CalmlyAI ",
+    description:
+      "AI chatbot focused on mental health support and wellness. Tuned the chatbot using Gemini API for mental health topics, improving accuracy by 50%",
+    link: "https://lalit-kumar-mental-wellness.vercel.app/",
+  },
+  {
+    iconUrl: snapgram, // replace with actual icon URL
+    theme: "btn-back-red",
     name: "ReelTubeSaver",
     description:
       "Built a web app for downloading YouTube videos, Shorts, and Instagram reels.",
@@ -164,7 +172,7 @@ export const projects = [
   },
   {
     iconUrl: shop, // replace with actual icon URL
-    theme: "btn-back-purple",
+    theme: "btn-back-pink",
     name: "Lucky Fashion Store",
     description:
       "A React Native women’s clothing shopping app with secure login, shopping cart, WhatsApp integration, and Firebase backend for real-time data.",
@@ -172,7 +180,7 @@ export const projects = [
   },
   {
     iconUrl: threads,
-    theme: "btn-back-green",
+    theme: "btn-back-yellow",
     name: "Authentication App",
     description:
       "Developed a React application for user authentication and management.",
@@ -180,7 +188,7 @@ export const projects = [
   },
   {
     iconUrl: snapgram,
-    theme: "btn-back-pink",
+    theme: "btn-back-green",
     name: "Spotify Clone",
     description:
       "Developed a Spotify Clone using React that replicates the functionality of the Spotify music streaming service. User authentication and authorization with Spotify API.",
@@ -196,7 +204,7 @@ export const projects = [
   },
   {
     iconUrl: summiz,
-    theme: "btn-back-yellow",
+    theme: "btn-back-orange",
     name: "Github Info Grabber",
     description:
       "An Angular project utilizing the GitHub API to fetch and display user information and repository details.",
