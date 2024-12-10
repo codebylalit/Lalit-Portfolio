@@ -9,7 +9,7 @@ import { experiences, skills } from "../constants";
 import "react-vertical-timeline-component/style.min.css";
 import { Link } from "react-router-dom";
 import { projects } from "../constants"; 
-import { iam } from "../assets/images";
+import { im } from "../assets/images";
 import { github, linkedin } from "../assets/icons";
 
 const About = () => {
@@ -18,7 +18,7 @@ const About = () => {
       <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-20 mt-10 lg:mt-20">
         {/* Add an image to the left */}
         <div className="w-[300px] h-[300px] md:w-[450px] md:h-[300px] lg:w-[650px] lg:h-[350px] rounded-full overflow-hidden">
-          <img src={iam} alt="Lalit" className="w-full h-full object-cover" />
+          <img src={im} alt="Lalit" className="w-full h-full object-cover" />
         </div>
 
         {/* Personal info shifted to the right */}
