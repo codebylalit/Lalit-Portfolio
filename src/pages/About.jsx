@@ -24,10 +24,7 @@ const About = () => {
         {/* Personal info shifted to the right */}
         <div className="text-center lg:text-left">
           <h1 className="head-text text-2xl lg:text-4xl">
-            Hello, I'm{" "}
-            <span className="font-semibold drop-shadow">
-              Lalit
-            </span>{" "}
+            Hello, I'm <span className="font-semibold drop-shadow">Lalit</span>{" "}
             👋
           </h1>
 
@@ -44,7 +41,7 @@ const About = () => {
               className="border border-black bg-transparent text-black font-semibold py-2 px-3 rounded-xl transition-colors duration-300 hover:bg-gray-600 hover:text-white text-sm md:text-base"
               onClick={() =>
                 (window.location.href =
-                  "https://drive.google.com/file/d/1pz5SHUvwvwsa-wLdU2OO_uiykrkIWylc/view?usp=sharing")
+                  "https://drive.google.com/file/d/1rGT_88pD1cnX7DAiO3rG3UGVStXASfY_/view?usp=sharing")
               }
             >
               Download CV
