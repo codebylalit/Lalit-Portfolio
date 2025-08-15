@@ -146,120 +146,126 @@ export const socialLinks = [
 ];
 
   export const projects = [
-  {
-    name: "Skooty",
-    description: "A ride-sharing platform for apps (React Native, Firebase, Node.js, Google Maps) and web version built with React.",
-    link: "https://skooty.live/",
-    iconUrl: "/path/to/skooty-icon.png",
-    theme: "btn-back-blue" // or any theme class you already use
-  },
-  {
-    name: "Solve Buddy",
-    description: "A collaborative learning platform built with HTML, CSS, and JavaScript.",
-    link: "https://solve-buddy.vercel.app/",
-    iconUrl: "/path/to/solvebuddy-icon.png",
-    theme: "btn-back-green"
-  },
-  {
-    name: "Invoicely",
-    description: "An online invoicing app built with React, Supabase, and TypeScript.",
-    link: "https://www.invoicely.me/",
-    iconUrl: "/path/to/invoicely-icon.png",
-    theme: "btn-back-yellow"
-  },
-  {
-    name: "Hashly AI",
-    description: "A social media hashtag generator powered by AI, built with React, Supabase, and TypeScript.",
-    link: "https://www.hashlyai.me/",
-    iconUrl: "/path/to/hashlyai-icon.png",
-    theme: "btn-back-purple"
-  },
-  {
-    name: "Shortify",
-    description: "Url shortner app built with React and TypeScript.",
-    link: "https://vibelyai.vercel.app/",
-    iconUrl: "/path/to/vibelyai-icon.png",
-    theme: "btn-back-red"
-  },
-  {
-    name: "Lofi Room Alpha",
-    description: "A relaxing lofi music room experience built with HTML, CSS, and JavaScript.",
-    link: "https://lofi-room-alpha.vercel.app/",
-    iconUrl: "/path/to/lofiroom-icon.png",
-    theme: "btn-back-pink"
-  },
-  {
-    name: "Calmly AI",
-    description: "An AI-powered mental wellness app built with React, Firebase, and TypeScript.",
-    link: "https://calmly-ai.vercel.app/",
-    iconUrl: "/path/to/calmlyai-icon.png",
-    theme: "btn-back-orange"
-  },
-  {
-    iconUrl: snapgram, // replace with actual icon URL
-    theme: "btn-back-pink",
-    name: "CalmlyAI ",
-    description:
-      "AI chatbot focused on mental health support and wellness. Tuned the chatbot using Gemini API for mental health topics, improving accuracy by 50%",
-    link: "https://lalit-kumar-mental-wellness.vercel.app/",
-  },
-  {
-    iconUrl: snapgram, // replace with actual icon URL
-    theme: "btn-back-red",
-    name: "ReelTubeSaver",
-    description:
-      "Built a web app for downloading YouTube videos, Shorts, and Instagram reels.",
-    link: "https://reeltubesaver.vercel.app/",
-  },
-  {
-    iconUrl: summiz, // replace with actual icon URL
-    theme: "btn-back-blue",
-    name: "ApplyLog",
-    description:
-      "A comprehensive web application for organizing and managing job applications with an analytics tab and task management features.",
-    link: "https://applylog.vercel.app/",
-  },
-  {
-    iconUrl: shop, // replace with actual icon URL
-    theme: "btn-back-pink",
-    name: "Lucky Fashion Store",
-    description:
-      "A React Native women’s clothing shopping app with secure login, shopping cart, WhatsApp integration, and Firebase backend for real-time data.",
-    link: "https://drive.google.com/file/d/1Ow1KAIqOqVWb7RJjiLELb1J4MZqsK1Lu/view",
-  },
-  {
-    iconUrl: threads,
-    theme: "btn-back-yellow",
-    name: "Authentication App",
-    description:
-      "Developed a React application for user authentication and management.",
-    link: "https://github.com/codebylalit/Authentication-App",
-  },
-  {
-    iconUrl: snapgram,
-    theme: "btn-back-green",
-    name: "Spotify Clone",
-    description:
-      "Developed a Spotify Clone using React that replicates the functionality of the Spotify music streaming service. User authentication and authorization with Spotify API.",
-    link: "https://github.com/codebylalit/spotify-clone",
-  },
-  {
-    iconUrl: estate,
-    theme: "btn-back-black",
-    name: "Sorting Visualizer",
-    description:
-      "Implemented real-time visualization of sorting processes with Bubble Sort, Selection Sort, and Merge Sort using HTML, CSS, and JavaScript.",
-    link: "https://github.com/codebylalit/Sorting-Visualizer",
-  },
-  {
-    iconUrl: summiz,
-    theme: "btn-back-orange",
-    name: "Github Info Grabber",
-    description:
-      "An Angular project utilizing the GitHub API to fetch and display user information and repository details.",
-    link: "https://github.com/codebylalit/GithubInfoGrabber-SPA-",
-  },
-];
+    {
+      name: "Skooty",
+      description:
+        "A ride-sharing platform for apps (React Native, Firebase, Node.js, Google Maps) and web version built with React.",
+      link: "https://skooty.live/",
+      iconUrl: snapgram,
+      theme: "btn-back-blue", // or any theme class you already use
+    },
+    {
+      name: "Solve Buddy",
+      description:
+        "A collaborative learning platform built with HTML, CSS, and JavaScript.",
+      link: "https://solve-buddy.vercel.app/",
+      iconUrl: snapgram,
+      theme: "btn-back-green",
+    },
+    {
+      name: "Invoicely",
+      description:
+        "An online invoicing app built with React, Supabase, and TypeScript.",
+      link: "https://www.invoicely.me/",
+      iconUrl: snapgram,
+      theme: "btn-back-yellow",
+    },
+    {
+      name: "Hashly AI",
+      description:
+        "A social media hashtag generator powered by AI, built with React, Supabase, and TypeScript.",
+      link: "https://www.hashlyai.me/",
+      iconUrl: snapgram,
+      theme: "btn-back-purple",
+    },
+    {
+      name: "Shortify",
+      description: "Url shortner app built with React and TypeScript.",
+      link: "https://vibelyai.vercel.app/",
+      iconUrl: summiz,
+      theme: "btn-back-red",
+    },
+    {
+      name: "Lofi Room Alpha",
+      description:
+        "A relaxing lofi music room experience built with HTML, CSS, and JavaScript.",
+      link: "https://lofi-room-alpha.vercel.app/",
+      iconUrl: summiz,
+      theme: "btn-back-pink",
+    },
+    {
+      name: "Calmly AI",
+      description:
+        "An AI-powered mental wellness app built with React, Firebase, and TypeScript.",
+      link: "https://calmly-ai.vercel.app/",
+      iconUrl: snapgram,
+      theme: "btn-back-orange",
+    },
+    {
+      iconUrl: snapgram, // replace with actual icon URL
+      theme: "btn-back-pink",
+      name: "CalmlyAI ",
+      description:
+        "AI chatbot focused on mental health support and wellness. Tuned the chatbot using Gemini API for mental health topics, improving accuracy by 50%",
+      link: "https://lalit-kumar-mental-wellness.vercel.app/",
+    },
+    {
+      iconUrl: snapgram, // replace with actual icon URL
+      theme: "btn-back-red",
+      name: "ReelTubeSaver",
+      description:
+        "Built a web app for downloading YouTube videos, Shorts, and Instagram reels.",
+      link: "https://reeltubesaver.vercel.app/",
+    },
+    {
+      iconUrl: summiz, // replace with actual icon URL
+      theme: "btn-back-blue",
+      name: "ApplyLog",
+      description:
+        "A comprehensive web application for organizing and managing job applications with an analytics tab and task management features.",
+      link: "https://applylog.vercel.app/",
+    },
+    {
+      iconUrl: shop, // replace with actual icon URL
+      theme: "btn-back-pink",
+      name: "Lucky Fashion Store",
+      description:
+        "A React Native women’s clothing shopping app with secure login, shopping cart, WhatsApp integration, and Firebase backend for real-time data.",
+      link: "https://drive.google.com/file/d/1Ow1KAIqOqVWb7RJjiLELb1J4MZqsK1Lu/view",
+    },
+    {
+      iconUrl: threads,
+      theme: "btn-back-yellow",
+      name: "Authentication App",
+      description:
+        "Developed a React application for user authentication and management.",
+      link: "https://github.com/codebylalit/Authentication-App",
+    },
+    {
+      iconUrl: snapgram,
+      theme: "btn-back-green",
+      name: "Spotify Clone",
+      description:
+        "Developed a Spotify Clone using React that replicates the functionality of the Spotify music streaming service. User authentication and authorization with Spotify API.",
+      link: "https://github.com/codebylalit/spotify-clone",
+    },
+    {
+      iconUrl: estate,
+      theme: "btn-back-black",
+      name: "Sorting Visualizer",
+      description:
+        "Implemented real-time visualization of sorting processes with Bubble Sort, Selection Sort, and Merge Sort using HTML, CSS, and JavaScript.",
+      link: "https://github.com/codebylalit/Sorting-Visualizer",
+    },
+    {
+      iconUrl: summiz,
+      theme: "btn-back-orange",
+      name: "Github Info Grabber",
+      description:
+        "An Angular project utilizing the GitHub API to fetch and display user information and repository details.",
+      link: "https://github.com/codebylalit/GithubInfoGrabber-SPA-",
+    },
+  ];
 
     // {
     //     iconUrl: pricewise,
