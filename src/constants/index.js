@@ -203,14 +203,6 @@ export const socialLinks = [
     },
     {
       iconUrl: snapgram, // replace with actual icon URL
-      theme: "btn-back-pink",
-      name: "CalmlyAI ",
-      description:
-        "AI chatbot focused on mental health support and wellness. Tuned the chatbot using Gemini API for mental health topics, improving accuracy by 50%",
-      link: "https://lalit-kumar-mental-wellness.vercel.app/",
-    },
-    {
-      iconUrl: snapgram, // replace with actual icon URL
       theme: "btn-back-red",
       name: "ReelTubeSaver",
       description:

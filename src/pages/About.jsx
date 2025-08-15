@@ -15,7 +15,7 @@ import { github, linkedin } from "../assets/icons";
 const About = () => {
   return (
     <section className="max-container bg-yellow-100 text-blue-950 font-sans">
-      <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-20 mt-10 lg:mt-20">
+      <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-10 mt-10 lg:mt-20">
         {/* Add an image to the left */}
         <div className="w-[300px] h-[300px] md:w-[450px] md:h-[300px] lg:w-[650px] lg:h-[350px] rounded-full overflow-hidden">
           <img src={im2} alt="Lalit" className="w-full h-full object-cover" />
