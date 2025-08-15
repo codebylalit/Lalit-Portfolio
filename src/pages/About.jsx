@@ -9,7 +9,7 @@ import { experiences, skills } from "../constants";
 import "react-vertical-timeline-component/style.min.css";
 import { Link } from "react-router-dom";
 import { projects } from "../constants"; 
-import { im } from "../assets/images";
+import { im2 } from "../assets/images";
 import { github, linkedin } from "../assets/icons";
 
 const About = () => {
@@ -30,8 +30,8 @@ const About = () => {
 
           <div className="mt-5 flex flex-col gap-3 text-slate-500 text-sm md:text-base">
             <p>
-              Aspiring Software Engineer, specializing in technical education
-              through hands-on learning and building applications.
+              i'm a software engineer who builds immersive and user friendly web
+              applications that users loves.
             </p>
           </div>
 
@@ -41,7 +41,7 @@ const About = () => {
               className="border border-black bg-transparent text-black font-semibold py-2 px-3 rounded-xl transition-colors duration-300 hover:bg-gray-600 hover:text-white text-sm md:text-base"
               onClick={() =>
                 (window.location.href =
-                  "https://drive.google.com/file/d/1rGT_88pD1cnX7DAiO3rG3UGVStXASfY_/view?usp=sharing")
+                  "https://drive.google.com/file/d/1PAXC7whUvhhT5Ecmg3ZI0NjXd1wdK3em/view?usp=sharing")
               }
             >
               Download CV
@@ -59,7 +59,7 @@ const About = () => {
               className="w-6 h-6 md:w-8 md:h-8 cursor-pointer"
               onClick={() =>
                 (window.location.href =
-                  "https://www.linkedin.com/in/lalit-kumar-38ba99171/")
+                  "https://drive.google.com/file/d/1PAXC7whUvhhT5Ecmg3ZI0NjXd1wdK3em/view?usp=sharing")
               }
             />
             <img
