@@ -1,4 +1,3 @@
-import emailjs from "@emailjs/browser";
 import { Canvas } from "@react-three/fiber";
 import { Suspense, useRef, useState } from "react";
 
@@ -20,76 +19,67 @@ const Contact = () => {
   const handleFocus = () => setCurrentAnimation("walk");
   const handleBlur = () => setCurrentAnimation("idle");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
     setCurrentAnimation("hit");
 
-    emailjs
-      .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
-        {
-          from_name: form.name,
-          to_name: "JavaScript Mastery",
-          from_email: form.email,
-          to_email: "Lalitkumarnamdev4645@gmail.com",
-          message: form.message,
+    try {
+      const response = await fetch("https://formspree.io/f/xeolzgvz", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
-      )
-      .then(
-        () => {
-          setLoading(false);
-          showAlert({
-            show: true,
-            text: "Thank you for your message 😃",
-            type: "success",
-          });
+        body: JSON.stringify(form),
+      });
 
-          setTimeout(() => {
-            hideAlert(false);
-            setCurrentAnimation("idle");
-            setForm({
-              name: "",
-              email: "",
-              message: "",
-            });
-          }, [3000]);
-        },
-        (error) => {
-          setLoading(false);
-          console.error(error);
+      if (response.ok) {
+        setLoading(false);
+        showAlert({
+          show: true,
+          text: "Thank you for your message 😃",
+          type: "success",
+        });
+
+        setTimeout(() => {
+          hideAlert(false);
           setCurrentAnimation("idle");
-
-          showAlert({
-            show: true,
-            text: "I didn't receive your message 😢",
-            type: "danger",
-          });
-        }
-      );
+          setForm({ name: "", email: "", message: "" });
+        }, 3000);
+      } else {
+        throw new Error("Form submission failed");
+      }
+    } catch (error) {
+      console.error(error);
+      setLoading(false);
+      setCurrentAnimation("idle");
+      showAlert({
+        show: true,
+        text: "I didn't receive your message 😢",
+        type: "danger",
+      });
+    }
   };
 
   return (
-    <section className='relative flex lg:flex-row flex-col max-container'>
+    <section className="relative flex lg:flex-row flex-col max-container">
       {alert.show && <Alert {...alert} />}
 
-      <div className='flex-1 min-w-[50%] flex flex-col'>
-        <h1 className='head-text'>Get in Touch</h1>
+      <div className="flex-1 min-w-[50%] flex flex-col">
+        <h1 className="head-text">Get in Touch</h1>
 
         <form
           ref={formRef}
           onSubmit={handleSubmit}
-          className='w-full flex flex-col gap-7 mt-14'
+          className="w-full flex flex-col gap-7 mt-14"
         >
-          <label className='text-black-500 font-semibold'>
+          <label className="text-black-500 font-semibold">
             Name
             <input
-              type='text'
-              name='name'
-              className='input'
-              placeholder='John'
+              type="text"
+              name="name"
+              className="input"
+              placeholder="John"
               required
               value={form.name}
               onChange={handleChange}
@@ -97,13 +87,13 @@ const Contact = () => {
               onBlur={handleBlur}
             />
           </label>
-          <label className='text-black-500 font-semibold'>
+          <label className="text-black-500 font-semibold">
             Email
             <input
-              type='email'
-              name='email'
-              className='input'
-              placeholder='John@gmail.com'
+              type="email"
+              name="email"
+              className="input"
+              placeholder="John@gmail.com"
               required
               value={form.email}
               onChange={handleChange}
@@ -111,13 +101,13 @@ const Contact = () => {
               onBlur={handleBlur}
             />
           </label>
-          <label className='text-black-500 font-semibold'>
+          <label className="text-black-500 font-semibold">
             Your Message
             <textarea
-              name='message'
-              rows='4'
-              className='textarea'
-              placeholder='Write your thoughts here...'
+              name="message"
+              rows="4"
+              className="textarea"
+              placeholder="Write your thoughts here..."
               value={form.message}
               onChange={handleChange}
               onFocus={handleFocus}
@@ -126,9 +116,9 @@ const Contact = () => {
           </label>
 
           <button
-            type='submit'
+            type="submit"
             disabled={loading}
-            className='btn'
+            className="btn"
             onFocus={handleFocus}
             onBlur={handleBlur}
           >
@@ -137,7 +127,7 @@ const Contact = () => {
         </form>
       </div>
 
-      <div className='lg:w-1/2 w-full lg:h-auto md:h-[550px] h-[350px]'>
+      <div className="lg:w-1/2 w-full lg:h-auto md:h-[550px] h-[350px]">
         <Canvas
           camera={{
             position: [0, 0, 5],

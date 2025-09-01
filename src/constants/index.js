@@ -160,7 +160,7 @@ export const projects = [
     description:
       "A collaborative learning platform built with HTML, CSS, and JavaScript.",
     link: "https://solve-buddy.vercel.app/",
-    iconUrl: snapgram,
+    iconUrl: "./src/assets/study.png",
     theme: "btn-back-green",
   },
   {
@@ -183,7 +183,7 @@ export const projects = [
     name: "Shortify",
     description: "Url shortner app built with React and TypeScript.",
     link: "https://vibelyai.vercel.app/",
-    iconUrl: summiz,
+    iconUrl: "./src/assets/shortify.png",
     theme: "btn-back-red",
   },
   {
@@ -191,7 +191,7 @@ export const projects = [
     description:
       "A relaxing lofi music room experience built with HTML, CSS, and JavaScript.",
     link: "https://lofi-room-alpha.vercel.app/",
-    iconUrl: summiz,
+    iconUrl: "./src/assets/lofi.jpg",
     theme: "btn-back-pink",
   },
   {
