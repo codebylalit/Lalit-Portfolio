@@ -184,7 +184,7 @@ export const projects = [
   {
     name: "My Notes",
     description:
-      "A clean, minimalist note-taking app that helps you capture ideas, manage tasks, and organize your thoughts without distractions. built with React and Firebase",
+      "A clean, minimalist note-taking app that helps you capture ideas, manage tasks. built with React and Firebase.",
     link: "https://mynote-s.vercel.app/",
     iconUrl: mynotes,
     theme: "btn-back-purple",
