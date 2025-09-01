@@ -168,8 +168,8 @@ export const projects = [
     name: "Solve Buddy",
     description:
       "A collaborative learning platform built with HTML, CSS, and JavaScript.",
-    link: study,
-    iconUrl: "./src/assets/study.png",
+    link: "https://solve-buddy.vercel.app/",
+    iconUrl: study,
     theme: "btn-back-green",
   },
   {
@@ -177,7 +177,7 @@ export const projects = [
     description:
       "An online invoicing app built with React, Supabase, and TypeScript.",
     link: "https://www.invoicely.me/",
-    iconUrl:invoicely,
+    iconUrl: invoicely,
     theme: "btn-back-yellow",
   },
   {
@@ -185,22 +185,22 @@ export const projects = [
     description:
       "A social media hashtag generator powered by AI, built with React, Supabase, and TypeScript.",
     link: "https://www.hashlyai.me/",
-    iconUrl:hashly,
+    iconUrl: hashly,
     theme: "btn-back-purple",
   },
   {
     name: "Shortify",
     description: "Url shortner app built with React and TypeScript.",
-    link: shortify,
-    iconUrl: "./src/assets/shortify.png",
+    link: "https://shortifyy.live/",
+    iconUrl: shortify,
     theme: "btn-back-red",
   },
   {
     name: "Lofi Room Alpha",
     description:
       "A relaxing lofi music room experience built with HTML, CSS, and JavaScript.",
-    link:lofi,
-    iconUrl: "./src/assets/lofi.jpg",
+    link: "https://lofi-room-alpha.vercel.app/",
+    iconUrl: lofi,
     theme: "btn-back-pink",
   },
   {
