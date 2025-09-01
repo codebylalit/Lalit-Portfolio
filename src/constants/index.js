@@ -29,6 +29,7 @@ import {
   shop,
   x,
 } from "../assets/icons";
+import hashly from "./../assets/hashly.png";
 
 export const skills = [
   {
@@ -176,7 +177,7 @@ export const projects = [
     description:
       "A social media hashtag generator powered by AI, built with React, Supabase, and TypeScript.",
     link: "https://www.hashlyai.me/",
-    iconUrl: "./src/assets/hashly.png",
+    iconUrl:hashly,
     theme: "btn-back-purple",
   },
   {
