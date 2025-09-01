@@ -165,14 +165,6 @@ export const projects = [
     theme: "btn-back-blue", // or any theme class you already use
   },
   {
-    name: "Solve Buddy",
-    description:
-      "A collaborative learning platform built with HTML, CSS, and JavaScript.",
-    link: "https://solve-buddy.vercel.app/",
-    iconUrl: study,
-    theme: "btn-back-green",
-  },
-  {
     name: "Invoicely",
     description:
       "An online invoicing app built with React, Supabase, and TypeScript.",
@@ -194,6 +186,14 @@ export const projects = [
     link: "https://shortifyy.live/",
     iconUrl: shortify,
     theme: "btn-back-red",
+  },
+  {
+    name: "Solve Buddy",
+    description:
+      "A collaborative learning platform built with HTML, CSS, and JavaScript.",
+    link: "https://solve-buddy.vercel.app/",
+    iconUrl: study,
+    theme: "btn-back-green",
   },
   {
     name: "Lofi Room Alpha",
