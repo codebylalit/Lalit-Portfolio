@@ -30,6 +30,14 @@ import {
   x,
 } from "../assets/icons";
 import hashly from "./../assets/hashly.png";
+import study from "./../assets/study.png";
+import shortify from "./../assets/shortify.png";
+import skooty from "./../assets/skooty.png";
+import lofi from "./../assets/lofi.jpg";
+import invoicely from "./../assets/invoicely.png";
+import buildspace from "./../assets/buildspace.jpg";
+import self from "./../assets/self.jpg";
+
 
 export const skills = [
   {
@@ -105,7 +113,7 @@ export const experiences = [
     title: "Software Engineer Fellow",
     company_name: "BuildSpace S5",
     iconBg: "#accbe1",
-    icon: "./src/assets/buildspace.jpg",
+    icon: buildspace,
     date: "June 2024 - July 2024",
     points: [
       'Developed and deployed "ApplyLog," a robust web application using the MERN stack.',
@@ -118,7 +126,7 @@ export const experiences = [
     title: "FrontEnd Development",
     company_name: "Freelance",
     iconBg: "#fbc3bc",
-    icon: "./src/assets/self.jpg",
+    icon: self,
     date: "Aug 2024 - Sep 2024",
     points: [
       "Led the frontend development of the Osheanic website, incorporating a modern and user-friendly interface.",
@@ -153,14 +161,14 @@ export const projects = [
     description:
       "A ride-sharing platform for apps (React Native, Firebase, Node.js, Google Maps) and web version built with React.",
     link: "https://skooty.live/",
-    iconUrl: "./src/assets/skooty.png",
+    iconUrl: skooty,
     theme: "btn-back-blue", // or any theme class you already use
   },
   {
     name: "Solve Buddy",
     description:
       "A collaborative learning platform built with HTML, CSS, and JavaScript.",
-    link: "https://solve-buddy.vercel.app/",
+    link: study,
     iconUrl: "./src/assets/study.png",
     theme: "btn-back-green",
   },
@@ -169,7 +177,7 @@ export const projects = [
     description:
       "An online invoicing app built with React, Supabase, and TypeScript.",
     link: "https://www.invoicely.me/",
-    iconUrl:"./src/assets/invoicely.png",
+    iconUrl:invoicely,
     theme: "btn-back-yellow",
   },
   {
@@ -183,7 +191,7 @@ export const projects = [
   {
     name: "Shortify",
     description: "Url shortner app built with React and TypeScript.",
-    link: "https://vibelyai.vercel.app/",
+    link: shortify,
     iconUrl: "./src/assets/shortify.png",
     theme: "btn-back-red",
   },
@@ -191,7 +199,7 @@ export const projects = [
     name: "Lofi Room Alpha",
     description:
       "A relaxing lofi music room experience built with HTML, CSS, and JavaScript.",
-    link: "https://lofi-room-alpha.vercel.app/",
+    link:lofi,
     iconUrl: "./src/assets/lofi.jpg",
     theme: "btn-back-pink",
   },
