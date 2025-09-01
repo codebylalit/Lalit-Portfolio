@@ -37,6 +37,7 @@ import lofi from "./../assets/lofi.jpg";
 import invoicely from "./../assets/invoicely.png";
 import buildspace from "./../assets/buildspace.jpg";
 import self from "./../assets/self.jpg";
+import mynotes from "./../assets/mynotes.png";
 
 
 export const skills = [
@@ -178,6 +179,14 @@ export const projects = [
       "A social media hashtag generator powered by AI, built with React, Supabase, and TypeScript.",
     link: "https://www.hashlyai.me/",
     iconUrl: hashly,
+    theme: "btn-back-purple",
+  },
+  {
+    name: "My Notes",
+    description:
+      "A clean, minimalist note-taking app that helps you capture ideas, manage tasks, and organize your thoughts without distractions. built with React and Firebase",
+    link: "https://mynote-s.vercel.app/",
+    iconUrl: mynotes,
     theme: "btn-back-purple",
   },
   {
