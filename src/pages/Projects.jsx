@@ -31,7 +31,7 @@ const Projects = () => {
                 <img
                   src={project.iconUrl}
                   alt="threads"
-                  className="w-1/2 h-1/2 object-contain"
+                  className="w-50% h-50% object-contain"
                 />
               </div>
             </div>
