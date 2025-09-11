@@ -188,7 +188,7 @@ export const projects = [
       "A social media hashtag generator powered by AI, built with React, Supabase, and TypeScript.",
     link: "https://www.hashlyai.me/",
     iconUrl: hashly,
-    theme: "btn-back-purple",
+    theme: "btn-back-green",
   },
   {
     name: "My Notes",
@@ -196,14 +196,14 @@ export const projects = [
       "A clean, minimalist note-taking app that helps you capture ideas, manage tasks. built with React and Firebase.",
     link: "https://mynote-s.vercel.app/",
     iconUrl: mynotes,
-    theme: "btn-back-purple",
+    theme: "btn-back-blue",
   },
   {
     name: "Shortify",
     description: "Url shortner app built with React and TypeScript.",
     link: "https://shortifyy.live/",
     iconUrl: shortify,
-    theme: "btn-back-red",
+    theme: "btn-back-yelow",
   },
   {
     name: "Solve Buddy",
