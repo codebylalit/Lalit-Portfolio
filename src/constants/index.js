@@ -164,12 +164,12 @@ export const projects = [
       "A ride-sharing platform for apps (React Native, Firebase, Node.js, Google Maps) and web version built with React.",
     link: "https://skooty.live/",
     iconUrl: skooty,
-    theme: "btn-back-blue", // or any theme class you already use
+    theme: "btn-back-red", // or any theme class you already use
   },
   {
     name: "Nano Banana",
     description:
-    "AI-powered image generation and editing tool built with Google’s Gemini API",
+      "AI-powered image generation and editing tool built with Google’s Gemini API",
     link: "https://www.nenobanana.site/",
     iconUrl: nano,
     theme: "btn-back-yellow",
