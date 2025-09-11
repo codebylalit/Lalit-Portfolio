@@ -170,7 +170,7 @@ export const projects = [
     name: "Nano Banana",
     description:
       "AI-powered image generation and editing tool built with Google’s Gemini API",
-    link: "https://www.nenobanana.site/",
+    link: "https://nenobanana.site/",
     iconUrl: nano,
     theme: "btn-back-yellow",
   },
