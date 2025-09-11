@@ -164,7 +164,7 @@ export const projects = [
       "A ride-sharing platform for apps (React Native, Firebase, Node.js, Google Maps) and web version built with React.",
     link: "https://skooty.live/",
     iconUrl: skooty,
-    theme: "btn-back-red", // or any theme class you already use
+    theme: "btn-back-orange", // or any theme class you already use
   },
   {
     name: "Nano Banana",
@@ -203,7 +203,7 @@ export const projects = [
     description: "Url shortner app built with React and TypeScript.",
     link: "https://shortifyy.live/",
     iconUrl: shortify,
-    theme: "btn-back-yelow",
+    theme: "btn-back-yellow",
   },
   {
     name: "Solve Buddy",
