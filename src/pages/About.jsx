@@ -41,10 +41,10 @@ const About = () => {
               className="border border-black bg-transparent text-black font-semibold py-2 px-3 rounded-xl transition-colors duration-300 hover:bg-gray-600 hover:text-white text-sm md:text-base"
               onClick={() =>
                 (window.location.href =
-                  "https://drive.google.com/file/d/1PAXC7whUvhhT5Ecmg3ZI0NjXd1wdK3em/view?usp=sharing")
+                  "https://drive.google.com/file/d/1FO1a2OK85gBeI7tXdEvbfOWHIngEWZXE/view?usp=sharing")
               }
             >
-              Download CV
+              View/Download CV
             </button>
           </div>
 
