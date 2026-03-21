@@ -44,7 +44,7 @@ const About = () => {
                   "https://drive.google.com/file/d/1FO1a2OK85gBeI7tXdEvbfOWHIngEWZXE/view?usp=sharing")
               }
             >
-              View/Download CV
+              Download CV
             </button>
           </div>
 
@@ -136,6 +136,12 @@ const About = () => {
                     style={{ margin: 0 }}
                   >
                     {experience.company_name}
+                  </p>
+                  <p
+                    className="text-black-500/70 font-normal text-sm"
+                    style={{ margin: "4px 0 0 0" }}
+                  >
+                    {experience.location}
                   </p>
                 </div>
 

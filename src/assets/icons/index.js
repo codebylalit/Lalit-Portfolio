@@ -30,6 +30,7 @@ import soundoff from './soundoff.png'
 import cpp from '../icons/cpp.svg'
 import yt from '../icons/Yt.svg'
 import shop from "../icons/Shop.svg"
+import evercore from '../icons/evercore.jpg'
 
 export {
     css,
@@ -63,5 +64,6 @@ export {
     cpp,
     shop,
     yt,
-    x
+    x,
+    evercore
 }

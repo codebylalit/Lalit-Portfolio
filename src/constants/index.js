@@ -4,6 +4,7 @@ import {
   contact,
   css,
   estate,
+  evercore,
   express,
   git,
   github,
@@ -36,6 +37,7 @@ import skooty from "./../assets/skooty.png";
 import lofi from "./../assets/lofi.jpg";
 import invoicely from "./../assets/invoicely.png";
 import buildspace from "./../assets/buildspace.jpg";
+// import evercore from "./../assets/evercore.jpg";
 import self from "./../assets/self.jpg";
 import mynotes from "./../assets/mynotes.png";
 import nano from "./../assets/favicon.png";
@@ -111,6 +113,22 @@ export const skills = [
 ];
 
 export const experiences = [
+  {
+  title: "Software Engineer Intern",
+  company_name: "Evercore Digital Solutions",
+  location: "Ahmedabad, India",
+  iconBg: "#b7e4c7",
+  icon: evercore,
+  date: "Oct 2025 - Present",
+  points: [
+    "Developed micro SaaS applications using React, focusing on scalable and user-centric interfaces.",
+    "Utilized Cloudflare (Pages, Workers, KV, D1) for backend, hosting, and data management.",
+    "Built serverless architecture to handle APIs, database integration, and deployment.",
+    "Managed CI/CD pipelines and automated deployment workflows for faster releases.",
+    "Used Jira for task management, tracking problem statements, solutions, priorities, and deadlines.",
+    "Tracked development time and productivity using Clockify.",
+  ],
+},
   {
     title: "Software Engineer Fellow",
     company_name: "BuildSpace S5",
