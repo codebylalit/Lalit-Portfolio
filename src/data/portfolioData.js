@@ -25,6 +25,9 @@ import {
   shop,
   x,
 } from "../assets/icons";
+import lalit3d from "../assets/3d_lalit.png";
+
+export const DEFAULT_PROFILE_IMAGE = lalit3d;
 import hashly from "../assets/hashly.png";
 import study from "../assets/study.png";
 import shortify from "../assets/shortify.png";
@@ -94,12 +97,11 @@ export const getDefaultPortfolioData = () => ({
     ],
   },
   about: {
-    profileMediaType: "embed",
-    profileEmbedUrl:
-      "https://assets.pinterest.com/ext/embed.html?id=581808845633314049",
+    profileMediaType: "image",
+    profileEmbedUrl: "",
     profileEmbedWidth: 345,
     profileEmbedHeight: 295,
-    profileImage: "",
+    profileImage: lalit3d,
     greeting: "Hello, I'm",
     name: "Lalit",
     emoji: "👋",

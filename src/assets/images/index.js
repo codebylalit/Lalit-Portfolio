@@ -7,6 +7,7 @@ import logo from './logo.svg'
 import iam from './iam.jpg'
 import im from "./im.jpg";
 import im2 from "./im2.jpg";
+import lalit3d from "../3d_lalit.png";
 export {
     hero,
     meta,
@@ -16,5 +17,6 @@ export {
     logo,
     iam,
     im,
-    im2
+    im2,
+    lalit3d
 }

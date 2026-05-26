@@ -60,16 +60,16 @@ const About = () => {
 
   return (
     <section className="max-container bg-yellow-100 text-blue-950 font-sans">
-      <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-10 mt-10 lg:mt-20">
-        <div className="w-[300px] h-[300px] md:w-[450px] md:h-[300px] lg:w-[650px] lg:h-[350px] rounded-full overflow-hidden shrink-0">
+      <div className="about-hero mt-8 sm:mt-12 lg:mt-16">
+        <div className="about-hero-media">
           <ProfileMedia
             about={about}
             onImageChange={(v) => updateAbout("profileImage", v)}
           />
         </div>
 
-        <div className="text-center lg:text-left">
-          <h1 className="head-text text-2xl lg:text-4xl">
+        <div className="about-hero-content">
+          <h1 className="head-text text-3xl sm:text-4xl lg:text-5xl xl:text-[3.25rem] leading-tight">
             <EditableText
               value={about.greeting}
               onChange={(v) => updateAbout("greeting", v)}
@@ -86,7 +86,7 @@ const About = () => {
             />
           </h1>
 
-          <div className="mt-5 flex flex-col gap-3 text-slate-500 text-sm md:text-base">
+          <div className="mt-5 sm:mt-6 flex flex-col gap-4 text-slate-600 text-base sm:text-lg lg:text-xl leading-relaxed max-w-xl mx-auto lg:mx-0">
             <EditableText
               as="p"
               value={about.bio}
@@ -95,10 +95,10 @@ const About = () => {
             />
           </div>
 
-          <div className="flex justify-center lg:justify-start gap-3 mt-2">
+          <div className="flex justify-center lg:justify-start gap-3 mt-6 sm:mt-7">
             <button
               type="button"
-              className="border border-black bg-transparent text-black font-semibold py-2 px-3 rounded-xl transition-colors duration-300 hover:bg-gray-600 hover:text-white text-sm md:text-base"
+              className="border-2 border-blue-950 bg-transparent text-blue-950 font-semibold py-2.5 px-5 rounded-xl transition-colors duration-300 hover:bg-blue-950 hover:text-white text-base sm:text-lg"
               onClick={() => {
                 if (!canEdit) window.location.href = about.cvLink;
               }}
@@ -116,7 +116,7 @@ const About = () => {
 
           <div
             id="socials-container"
-            className="flex justify-center lg:justify-start mt-4 gap-3"
+            className="flex justify-center lg:justify-start mt-5 gap-4"
           >
             {about.aboutSocials.map((social, i) => (
               <div
@@ -136,7 +136,7 @@ const About = () => {
                 <EditableImage
                   src={social.iconUrl}
                   alt={social.name}
-                  imgClassName="w-6 h-6 md:w-8 md:h-8 object-contain"
+                  imgClassName="w-7 h-7 sm:w-8 sm:h-8 object-contain"
                   onChange={(v) => updateAboutSocial(i, "iconUrl", v)}
                 />
               </div>
@@ -184,10 +184,7 @@ const About = () => {
               value={about.experienceIntroPrefix}
               onChange={(v) => updateAbout("experienceIntroPrefix", v)}
             />
-            <Link
-              to={about.experienceIntroLinkPath}
-              className="text-blue-500"
-            >
+            <Link to={about.experienceIntroLinkPath} className="text-blue-500">
               {about.experienceIntroLinkText}
             </Link>
             <EditableText
@@ -211,9 +208,7 @@ const About = () => {
                       src={experience.icon}
                       alt={experience.company_name}
                       imgClassName="w-[100%] h-[100%] object-contain rounded-full"
-                      onChange={(v) =>
-                        updateExperience(expIndex, "icon", v)
-                      }
+                      onChange={(v) => updateExperience(expIndex, "icon", v)}
                     />
                   </div>
                 }
@@ -228,9 +223,7 @@ const About = () => {
                   <h3 className="text-black text-xl font-poppins font-semibold">
                     <EditableText
                       value={experience.title}
-                      onChange={(v) =>
-                        updateExperience(expIndex, "title", v)
-                      }
+                      onChange={(v) => updateExperience(expIndex, "title", v)}
                     />
                   </h3>
                   <p

@@ -28,7 +28,7 @@ const EditableImage = ({
   };
 
   return (
-    <div className={`relative inline-block ${className}`}>
+    <div className={`relative ${className}`}>
       <img
         src={resolveImageSrc(src)}
         alt={alt}

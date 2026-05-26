@@ -77,6 +77,18 @@ body:has(.card[data-color="green"]:hover) {
   .cta-text {
     @apply text-blue-950 font-extrabold flex-1 text-3xl max-md:text-center;
   }
+
+  .about-hero {
+    @apply grid grid-cols-1 lg:grid-cols-[minmax(260px,38%)_1fr] gap-8 sm:gap-10 lg:gap-12 xl:gap-14 items-center max-w-6xl mx-auto;
+  }
+
+  .about-hero-media {
+    @apply w-full max-w-[280px] sm:max-w-[320px] lg:max-w-[360px] xl:max-w-[400px] mx-auto lg:mx-0 aspect-square flex items-center justify-center;
+  }
+
+  .about-hero-content {
+    @apply text-center lg:text-left w-full min-w-0;
+  }
 }
 
 .glassmorphism {

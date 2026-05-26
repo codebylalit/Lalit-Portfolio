@@ -1,4 +1,10 @@
-import { getDefaultPortfolioData } from "../data/portfolioData";
+import {
+  DEFAULT_PROFILE_IMAGE,
+  getDefaultPortfolioData,
+} from "../data/portfolioData";
+
+const isValidImageSrc = (src) =>
+  typeof src === "string" && src.trim().length > 0;
 
 export const STORAGE_KEY = "portfolio_cms_data";
 
@@ -66,7 +72,13 @@ export const mergeWithDefaults = (stored) => {
       ...defaults.about,
       ...stored.about,
       profileMediaType:
-        stored.about?.profileMediaType ?? defaults.about.profileMediaType,
+        stored.about?.profileMediaType === "embed" &&
+        isValidImageSrc(stored.about?.profileEmbedUrl)
+          ? "embed"
+          : "image",
+      profileImage: isValidImageSrc(stored.about?.profileImage)
+        ? stored.about.profileImage
+        : DEFAULT_PROFILE_IMAGE,
       profileEmbedUrl:
         stored.about?.profileEmbedUrl ?? defaults.about.profileEmbedUrl,
       profileEmbedWidth:

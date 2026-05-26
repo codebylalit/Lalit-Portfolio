@@ -1,8 +1,15 @@
+import { DEFAULT_PROFILE_IMAGE } from "../data/portfolioData";
 import EditableImage from "./editing/EditableImage";
 
 const ProfileMedia = ({ about, onImageChange }) => {
   const useEmbed =
-    about.profileMediaType === "embed" && Boolean(about.profileEmbedUrl);
+    about.profileMediaType === "embed" &&
+    Boolean(about.profileEmbedUrl?.trim());
+
+  const imageSrc =
+    about.profileImage && String(about.profileImage).trim()
+      ? about.profileImage
+      : DEFAULT_PROFILE_IMAGE;
 
   if (useEmbed) {
     return (
@@ -23,10 +30,10 @@ const ProfileMedia = ({ about, onImageChange }) => {
 
   return (
     <EditableImage
-      src={about.profileImage}
+      src={imageSrc}
       alt={about.name}
-      className="w-full h-full"
-      imgClassName="w-full h-full object-cover"
+      className="block w-full h-full"
+      imgClassName="w-full h-full object-contain object-bottom scale-105"
       onChange={onImageChange}
     />
   );
