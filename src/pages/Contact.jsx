@@ -4,8 +4,20 @@ import { Suspense, useRef, useState } from "react";
 import { Fox } from "../models";
 import useAlert from "../hooks/useAlert";
 import { Alert, Loader } from "../components";
+import EditableText from "../components/editing/EditableText";
+import { usePortfolio } from "../hooks/usePortfolio";
 
 const Contact = () => {
+  const { data, setData, isEditMode, isAuth } = usePortfolio();
+  const { contact } = data;
+  const canEdit = isEditMode && isAuth;
+
+  const updateContact = (field, value) => {
+    setData((prev) => ({
+      ...prev,
+      contact: { ...prev.contact, [field]: value },
+    }));
+  };
   const formRef = useRef();
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const { alert, showAlert, hideAlert } = useAlert();
@@ -25,7 +37,7 @@ const Contact = () => {
     setCurrentAnimation("hit");
 
     try {
-      const response = await fetch("https://formspree.io/f/xeolzgvz", {
+      const response = await fetch(contact.formspreeEndpoint, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -37,7 +49,7 @@ const Contact = () => {
         setLoading(false);
         showAlert({
           show: true,
-          text: "Thank you for your message 😃",
+          text: contact.successMessage,
           type: "success",
         });
 
@@ -55,18 +67,27 @@ const Contact = () => {
       setCurrentAnimation("idle");
       showAlert({
         show: true,
-        text: "I didn't receive your message 😢",
+        text: contact.errorMessage,
         type: "danger",
       });
     }
   };
 
   return (
-    <section className="relative flex lg:flex-row flex-col max-container">
+    <section className="relative flex lg:flex-row flex-col max-container bg-yellow-100">
       {alert.show && <Alert {...alert} />}
 
       <div className="flex-1 min-w-[50%] flex flex-col">
-        <h1 className="head-text">Get in Touch</h1>
+        <h1 className="head-text">
+          {canEdit ? (
+            <EditableText
+              value={contact.title}
+              onChange={(v) => updateContact("title", v)}
+            />
+          ) : (
+            contact.title
+          )}
+        </h1>
 
         <form
           ref={formRef}
@@ -79,7 +100,7 @@ const Contact = () => {
               type="text"
               name="name"
               className="input"
-              placeholder="John"
+              placeholder={contact.namePlaceholder}
               required
               value={form.name}
               onChange={handleChange}
@@ -93,7 +114,7 @@ const Contact = () => {
               type="email"
               name="email"
               className="input"
-              placeholder="John@gmail.com"
+              placeholder={contact.emailPlaceholder}
               required
               value={form.email}
               onChange={handleChange}
@@ -107,7 +128,7 @@ const Contact = () => {
               name="message"
               rows="4"
               className="textarea"
-              placeholder="Write your thoughts here..."
+              placeholder={contact.messagePlaceholder}
               value={form.message}
               onChange={handleChange}
               onFocus={handleFocus}
@@ -122,7 +143,7 @@ const Contact = () => {
             onFocus={handleFocus}
             onBlur={handleBlur}
           >
-            {loading ? "Sending..." : "Submit"}
+            {loading ? contact.sendingText : contact.submitText}
           </button>
         </form>
       </div>
