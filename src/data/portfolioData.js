@@ -107,8 +107,8 @@ export const getDefaultPortfolioData = () => ({
     emoji: "👋",
     bio: "i'm a software engineer who builds immersive and user friendly web applications that users loves.",
     cvLink:
-      "https://drive.google.com/file/d/1FO1a2OK85gBeI7tXdEvbfOWHIngEWZXE/view?usp=sharing",
-    cvButtonText: "Download CV",
+      "https://drive.google.com/file/d/1sQ-swtqgM87O5eTL2MtpBGobvKOuIimT/view?usp=sharing",
+    cvButtonText: "View CV/Resume",
     aboutSocials: [
       {
         id: uid(),
