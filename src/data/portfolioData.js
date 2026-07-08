@@ -173,7 +173,7 @@ export const getDefaultPortfolioData = () => ({
     { id: uid(), imageUrl: d1, name: "Cloudflare D1", type: "Database" },
 
     // Mobile
-    { id: uid(), imageUrl: reactnative, name: "React Native", type: "Mobile" },
+    // { id: uid(), imageUrl: reactnative, name: "React Native", type: "Mobile" },
     { id: uid(), imageUrl: expo, name: "Expo", type: "Mobile" },
 
     // Version Control
