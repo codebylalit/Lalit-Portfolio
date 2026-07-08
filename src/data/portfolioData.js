@@ -114,7 +114,7 @@ export const getDefaultPortfolioData = () => ({
         id: uid(),
         name: "LinkedIn",
         iconUrl: linkedin,
-        link: "https://drive.google.com/file/d/1PAXC7whUvhhT5Ecmg3ZI0NjXd1wdK3em/view?usp=sharing",
+        link: "https://www.linkedin.com/in/lalitnamdevs",
       },
       {
         id: uid(),
@@ -132,17 +132,46 @@ export const getDefaultPortfolioData = () => ({
     experienceIntroLinkPath: "/projects",
   },
   skills: [
-    { id: uid(), imageUrl: css, name: "CSS", type: "Frontend" },
-    { id: uid(), imageUrl: html, name: "HTML", type: "Frontend" },
+    // Frontend
+    { id: uid(), imageUrl: html, name: "HTML5", type: "Frontend" },
+    { id: uid(), imageUrl: css, name: "CSS3", type: "Frontend" },
     { id: uid(), imageUrl: javascript, name: "JavaScript", type: "Frontend" },
-    { id: uid(), imageUrl: cpp, name: "C++", type: "Frontend" },
-    { id: uid(), imageUrl: react, name: "React", type: "Frontend" },
-    { id: uid(), imageUrl: express, name: "Express", type: "Backend" },
+    { id: uid(), imageUrl: typescript, name: "TypeScript", type: "Frontend" },
+    { id: uid(), imageUrl: react, name: "React.js", type: "Frontend" },
+    { id: uid(), imageUrl: nextjs, name: "Next.js", type: "Frontend" },
+    { id: uid(), imageUrl: tailwind, name: "Tailwind CSS", type: "Frontend" },
+    { id: uid(), imageUrl: mui, name: "Material UI", type: "Frontend" },
+
+    // Backend
+    { id: uid(), imageUrl: nodejs, name: "Node.js", type: "Backend" },
+    { id: uid(), imageUrl: express, name: "Express.js", type: "Backend" },
+    { id: uid(), imageUrl: cloudflare, name: "Cloudflare Workers", type: "Backend" },
+
+    // Database
+    { id: uid(), imageUrl: mongodb, name: "MongoDB", type: "Database" },
+    { id: uid(), imageUrl: supabase, name: "Supabase", type: "Database" },
+    { id: uid(), imageUrl: d1, name: "Cloudflare D1", type: "Database" },
+
+    // Mobile
+    { id: uid(), imageUrl: reactnative, name: "React Native", type: "Mobile" },
+    { id: uid(), imageUrl: expo, name: "Expo", type: "Mobile" },
+
+    // Version Control
     { id: uid(), imageUrl: git, name: "Git", type: "Version Control" },
     { id: uid(), imageUrl: github, name: "GitHub", type: "Version Control" },
-    { id: uid(), imageUrl: mongodb, name: "MongoDB", type: "Database" },
-    { id: uid(), imageUrl: nextjs, name: "Next.js", type: "Frontend" },
-    { id: uid(), imageUrl: nodejs, name: "Node.js", type: "Backend" },
+
+    // Languages
+    { id: uid(), imageUrl: cpp, name: "C++", type: "Programming Language" },
+    { id: uid(), imageUrl: python, name: "Python", type: "Programming Language" },
+
+    // APIs & AI
+    { id: uid(), imageUrl: gemini, name: "Gemini API", type: "AI" },
+    { id: uid(), imageUrl: openai, name: "OpenAI API", type: "AI" },
+
+    // Deployment & Tools
+    { id: uid(), imageUrl: vercel, name: "Vercel", type: "Deployment" },
+    { id: uid(), imageUrl: cloudflarepages, name: "Cloudflare Pages", type: "Deployment" },
+    { id: uid(), imageUrl: firebase, name: "Firebase", type: "Backend as a Service" },
     {
       id: uid(),
       imageUrl: tailwindcss,
