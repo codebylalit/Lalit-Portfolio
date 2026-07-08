@@ -48,10 +48,15 @@ const reactnative = "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/r
 const expo = "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/expo/expo-original.svg";
 const python = "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg";
 const gemini = "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/google/google-original.svg";
-const openai = "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/openai/openai-original.svg";
+const openai = "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/openai.svg";
 const vercel = "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg";
 const cloudflarepages = "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cloudflare/cloudflare-original.svg";
 const firebase = "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg";
+const bootstrap = "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg";
+const vscode = "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg";
+const jira = "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jira/jira-original.svg";
+const clockify = "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/clockify.svg";
+const cicd = "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubactions/githubactions-original.svg";
 
 /** Default admin password — change in Admin → Settings or portfolio export */
 export const DEFAULT_ADMIN_PASSWORD = "portfolio2024";
@@ -155,6 +160,7 @@ export const getDefaultPortfolioData = () => ({
     { id: uid(), imageUrl: nextjs, name: "Next.js", type: "Frontend" },
     { id: uid(), imageUrl: tailwindcss, name: "Tailwind CSS", type: "Frontend" },
     { id: uid(), imageUrl: mui, name: "Material UI", type: "Frontend" },
+    { id: uid(), imageUrl: bootstrap, name: "Bootstrap", type: "Frontend" },
 
     // Backend
     { id: uid(), imageUrl: nodejs, name: "Node.js", type: "Backend" },
@@ -186,13 +192,12 @@ export const getDefaultPortfolioData = () => ({
     { id: uid(), imageUrl: vercel, name: "Vercel", type: "Deployment" },
     { id: uid(), imageUrl: cloudflarepages, name: "Cloudflare Pages", type: "Deployment" },
     { id: uid(), imageUrl: firebase, name: "Firebase", type: "Backend as a Service" },
-    {
-      id: uid(),
-      imageUrl: tailwindcss,
-      name: "Tailwind CSS",
-      type: "Frontend",
-    },
-    { id: uid(), imageUrl: typescript, name: "TypeScript", type: "Frontend" },
+    { id: uid(), imageUrl: cicd, name: "CI/CD Pipelines", type: "Deployment" },
+
+    // Tools & Workflow
+    { id: uid(), imageUrl: vscode, name: "VS Code", type: "Tools & Workflow" },
+    { id: uid(), imageUrl: jira, name: "Jira", type: "Tools & Workflow" },
+    { id: uid(), imageUrl: clockify, name: "Clockify", type: "Tools & Workflow" },
   ],
   experiences: [
     {
