@@ -24,6 +24,7 @@ import {
   cpp,
   shop,
   x,
+  mui,
 } from "../assets/icons";
 import lalit3d from "../assets/3d_lalit.png";
 
@@ -38,6 +39,19 @@ import buildspace from "../assets/buildspace.jpg";
 import self from "../assets/self.jpg";
 import mynotes from "../assets/mynotes.png";
 import nano from "../assets/favicon.png";
+
+// CDN Fallbacks for icons not present in local assets
+const cloudflare = "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cloudflare/cloudflare-original.svg";
+const supabase = "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg";
+const d1 = "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg";
+const reactnative = "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg";
+const expo = "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/expo/expo-original.svg";
+const python = "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg";
+const gemini = "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/google/google-original.svg";
+const openai = "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/openai/openai-original.svg";
+const vercel = "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg";
+const cloudflarepages = "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cloudflare/cloudflare-original.svg";
+const firebase = "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg";
 
 /** Default admin password — change in Admin → Settings or portfolio export */
 export const DEFAULT_ADMIN_PASSWORD = "portfolio2024";
@@ -139,7 +153,7 @@ export const getDefaultPortfolioData = () => ({
     { id: uid(), imageUrl: typescript, name: "TypeScript", type: "Frontend" },
     { id: uid(), imageUrl: react, name: "React.js", type: "Frontend" },
     { id: uid(), imageUrl: nextjs, name: "Next.js", type: "Frontend" },
-    { id: uid(), imageUrl: tailwind, name: "Tailwind CSS", type: "Frontend" },
+    { id: uid(), imageUrl: tailwindcss, name: "Tailwind CSS", type: "Frontend" },
     { id: uid(), imageUrl: mui, name: "Material UI", type: "Frontend" },
 
     // Backend
